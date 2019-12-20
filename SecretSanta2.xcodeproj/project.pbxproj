@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		2C97F2CA23AD56B400A86A2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C97F2C923AD56B400A86A2A /* AppDelegate.swift */; };
 		2C97F2CC23AD56B400A86A2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C97F2CB23AD56B400A86A2A /* SceneDelegate.swift */; };
-		2C97F2CE23AD56B400A86A2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C97F2CD23AD56B400A86A2A /* ViewController.swift */; };
-		2C97F2D123AD56B400A86A2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C97F2CF23AD56B400A86A2A /* Main.storyboard */; };
-		2C97F2D423AD56B400A86A2A /* SecretSanta2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C97F2D223AD56B400A86A2A /* SecretSanta2.xcdatamodeld */; };
 		2C97F2D623AD56B500A86A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C97F2D523AD56B500A86A2A /* Assets.xcassets */; };
 		2C97F2D923AD56B500A86A2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C97F2D723AD56B500A86A2A /* LaunchScreen.storyboard */; };
+		2C97F2E623AD570F00A86A2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C97F2E523AD570F00A86A2A /* Main.storyboard */; };
+		2C97F2EC23AD574700A86A2A /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C97F2EB23AD574700A86A2A /* PersonController.swift */; };
+		2C97F2EE23AD574E00A86A2A /* PersonListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C97F2ED23AD574E00A86A2A /* PersonListTableViewController.swift */; };
+		2C97F2F023AD575400A86A2A /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C97F2EF23AD575400A86A2A /* PersonDetailViewController.swift */; };
+		2C97F2F223AD577F00A86A2A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C97F2F123AD577F00A86A2A /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C97F2C623AD56B400A86A2A /* SecretSanta2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSanta2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C97F2C923AD56B400A86A2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C97F2CB23AD56B400A86A2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C97F2CD23AD56B400A86A2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2C97F2D023AD56B400A86A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2C97F2D323AD56B400A86A2A /* SecretSanta2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SecretSanta2.xcdatamodel; sourceTree = "<group>"; };
 		2C97F2D523AD56B500A86A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C97F2D823AD56B500A86A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C97F2DA23AD56B500A86A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C97F2E523AD570F00A86A2A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2C97F2EB23AD574700A86A2A /* PersonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		2C97F2ED23AD574E00A86A2A /* PersonListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonListTableViewController.swift; sourceTree = "<group>"; };
+		2C97F2EF23AD575400A86A2A /* PersonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
+		2C97F2F123AD577F00A86A2A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,58 @@
 		2C97F2C823AD56B400A86A2A /* SecretSanta2 */ = {
 			isa = PBXGroup;
 			children = (
+				2C97F2E423AD56F700A86A2A /* UI */,
+				2C97F2E323AD56F000A86A2A /* Models */,
+				2C97F2E223AD56E900A86A2A /* ModelController */,
+				2C97F2E123AD56DF00A86A2A /* ViewControllers */,
+				2C97F2E023AD56C600A86A2A /* Resources */,
+			);
+			path = SecretSanta2;
+			sourceTree = "<group>";
+		};
+		2C97F2E023AD56C600A86A2A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				2C97F2C923AD56B400A86A2A /* AppDelegate.swift */,
 				2C97F2CB23AD56B400A86A2A /* SceneDelegate.swift */,
-				2C97F2CD23AD56B400A86A2A /* ViewController.swift */,
-				2C97F2CF23AD56B400A86A2A /* Main.storyboard */,
 				2C97F2D523AD56B500A86A2A /* Assets.xcassets */,
 				2C97F2D723AD56B500A86A2A /* LaunchScreen.storyboard */,
 				2C97F2DA23AD56B500A86A2A /* Info.plist */,
-				2C97F2D223AD56B400A86A2A /* SecretSanta2.xcdatamodeld */,
 			);
-			path = SecretSanta2;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2C97F2E123AD56DF00A86A2A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C97F2ED23AD574E00A86A2A /* PersonListTableViewController.swift */,
+				2C97F2EF23AD575400A86A2A /* PersonDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2C97F2E223AD56E900A86A2A /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				2C97F2EB23AD574700A86A2A /* PersonController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		2C97F2E323AD56F000A86A2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C97F2F123AD577F00A86A2A /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C97F2E423AD56F700A86A2A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2C97F2E523AD570F00A86A2A /* Main.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +174,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C97F2E623AD570F00A86A2A /* Main.storyboard in Resources */,
 				2C97F2D923AD56B500A86A2A /* LaunchScreen.storyboard in Resources */,
 				2C97F2D623AD56B500A86A2A /* Assets.xcassets in Resources */,
-				2C97F2D123AD56B400A86A2A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C97F2D423AD56B400A86A2A /* SecretSanta2.xcdatamodeld in Sources */,
-				2C97F2CE23AD56B400A86A2A /* ViewController.swift in Sources */,
+				2C97F2F023AD575400A86A2A /* PersonDetailViewController.swift in Sources */,
+				2C97F2EE23AD574E00A86A2A /* PersonListTableViewController.swift in Sources */,
 				2C97F2CA23AD56B400A86A2A /* AppDelegate.swift in Sources */,
+				2C97F2EC23AD574700A86A2A /* PersonController.swift in Sources */,
+				2C97F2F223AD577F00A86A2A /* Person.swift in Sources */,
 				2C97F2CC23AD56B400A86A2A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +199,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2C97F2CF23AD56B400A86A2A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C97F2D023AD56B400A86A2A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2C97F2D723AD56B500A86A2A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YRVTSSTS2;
-				INFOPLIST_FILE = SecretSanta2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SecretSanta2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4YRVTSSTS2;
-				INFOPLIST_FILE = SecretSanta2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SecretSanta2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,19 +382,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		2C97F2D223AD56B400A86A2A /* SecretSanta2.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				2C97F2D323AD56B400A86A2A /* SecretSanta2.xcdatamodel */,
-			);
-			currentVersion = 2C97F2D323AD56B400A86A2A /* SecretSanta2.xcdatamodel */;
-			path = SecretSanta2.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 2C97F2BE23AD56B400A86A2A /* Project object */;
 }
